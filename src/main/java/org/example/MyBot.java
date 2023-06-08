@@ -1,7 +1,7 @@
 package org.example;
 
 
-iimport org.example.massage;
+
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -114,7 +114,7 @@ public class MyBot extends TelegramLongPollingBot {
     public static void main(String[] args) {
         try {
             TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
-            botsApi.registerBot(new org.example.Boot_2.MyBot());
+            botsApi.registerBot(new MyBot());
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
